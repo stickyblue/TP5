@@ -1,0 +1,78 @@
+A:
+
+B 165 road
+C 210 road
+C 170 train
+K 600 plane
+I 650 train
+G 725 plane
+
+B:
+
+A 165 road
+D 290 road
+E 250 boat
+J 635 train
+
+C:
+
+A 170 train
+A 210 road
+D 310 road
+J 190 boat
+J 260 train
+K 600 boat
+
+
+D:
+B 290 road
+C 310 train
+F 190 road
+F 210 train
+I 350 road
+H 195 train
+
+E:
+B 250 boat
+F 165 road
+G 400 road
+
+F:
+E 165 road
+D 210 train
+D 190 road
+H 265 road
+
+G:
+A 725 plane
+E 400 road
+D 600 train
+H 225 road
+I 720 train
+I 550 plane
+
+H:
+D 195 road
+F 265 road
+G 225 road
+I 250 road
+
+I:
+A 650 train
+D 350 road
+H 250 road
+J 190 road
+G 720 train
+G 550 plane
+
+J:
+B 635 train
+C 190 boat
+C 260 train
+K 550 plane
+I 190 road
+
+K:
+A 600 plane
+C 600 boat
+J 550 plane
