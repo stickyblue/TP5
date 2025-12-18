@@ -1,6 +1,10 @@
 # TP5: Application GPS
 TP réalisé majoritairement en classe, et à finir chez soit. Le but est de concevoir, en suivant les questions, un prototype de GPS optimisé pour différents profils d'utilisateurs.
 
+## Exécution
+
+Le fichier s'exécute via ./Exercice
+
 ## Compilation
 
 La compilation est réalisée à l'aide d'un makefile, utilisant le compilateur g++ pour C++20.
