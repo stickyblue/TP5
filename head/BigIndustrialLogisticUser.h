@@ -31,7 +31,7 @@ class BigIndustrialLogisticUser: public User{
         float evaluateCost(std::string mode, float dist);
 
         // Liste des modes transports que l'utilisateur souhaite utiliser en priorité.
-        std::vector<std::string> acceptable_mode= {"road"};
+        std::vector<std::string> acceptable_mode = {"road"};
 
     public:
 

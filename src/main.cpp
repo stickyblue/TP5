@@ -8,6 +8,7 @@
 #include "../head/GeneralUser.h"
 #include "../head/EcoUser.h"
 #include "../head/BigIndustrialLogisticUser.h"
+#include <vector>
 
 
 int main()
@@ -34,13 +35,14 @@ int main()
 
     GeneralUser user1("User1", maWorldMap.getCities()["E"], maWorldMap);
     std::cout << "getAcessibleFromBy E, road and train: " << std::endl;
-    for (const auto& city_name : user1.getAcessibleFromBy("E", {"road", "train"})) {
+    for (const auto& city_name : user1.getAcessibleFromBy("E",{"road", "train"} )) {
         std::cout << "Ville accessible: " << city_name << std::endl;
     }
 
     EcoUser user2("User2", maWorldMap.getCities()["E"], maWorldMap);
     std::cout << "getAcessibleFromBy E, no arguments given: " << std::endl;
-    for (const auto& city_name : user1.getAcessibleFromBy("E", {})) {
+    std::vector<std::string> accessible_mode_list = user2.getAcessibleFromBy("E", {});
+    for (const auto& city_name : accessible_mode_list) {
         std::cout << "Ville accessible: " << city_name << std::endl;
     }
 

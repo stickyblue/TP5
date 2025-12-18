@@ -3,11 +3,11 @@
 #include"../head/City.h"
 #include"../head/Link.h"
 #include "../head/WorldMap.h"
-
+#include <iostream>
 
 
 EcoUser::EcoUser(std::string n, CityPtr c, WorldMap& m) : User(n, c, m), map(m)
-{}
+{acceptable_mode  = {"road", "train"};}
 
 
 
@@ -27,6 +27,6 @@ float EcoUser::evaluateCost(std::string mode, float dist)
         return dist * 220;
     }
     else {
-        return dist * (-1);
+        return dist * (99999999);
     }
 }

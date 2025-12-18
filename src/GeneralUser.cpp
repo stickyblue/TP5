@@ -7,7 +7,7 @@
 
 
 GeneralUser::GeneralUser(std::string n, CityPtr c, WorldMap& m) : User(n, c, m), map(m)
-{}
+{acceptable_mode = {"road", "boat", "plane", "train"};}
 
 
 float GeneralUser::evaluateCost(std::string mode, float dist)

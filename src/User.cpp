@@ -7,14 +7,15 @@
 
 
 User::User(std::string name, CityPtr city, WorldMap& map) : name(name), city(city), map(map) 
-{}
+{acceptable_mode = {};}
 
 std::vector<std::string> User::getAcessibleFromBy(const std::string& c, const std::vector<std::string> modes) const
 {
     std::vector<std::string> modesAcceptables = modes;
     if (modes.empty())
-    {
-        modesAcceptables = acceptable_mode;
+    {  
+        std::cout << "Using acceptable modes" << std::endl;
+        modesAcceptables = this->acceptable_mode;
     }
 
     std::deque<std::string> villeavoir = {c};

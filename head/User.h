@@ -24,7 +24,7 @@ class User{
         WorldMap& map;
 
         // Liste des modes transports que l'utilisateur souhaite utiliser en priorité.
-        std::vector<std::string> acceptable_mode = {};
+        std::vector<std::string> acceptable_mode;
 
         // Fonction évaluant le cout d'une mode de transport en fonction de la distance.
         virtual float evaluateCost(std::string mode, float dist) = 0;
