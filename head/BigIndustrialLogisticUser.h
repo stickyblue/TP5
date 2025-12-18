@@ -30,9 +30,6 @@ class BigIndustrialLogisticUser: public User{
         // Fonction évaluant le cout d'une mode de transport en fonction de la distance.
         float evaluateCost(std::string mode, float dist);
 
-        // Liste des modes transports que l'utilisateur souhaite utiliser en priorité.
-        std::vector<std::string> acceptable_mode = {"road"};
-
     public:
 
         // Constructor of User

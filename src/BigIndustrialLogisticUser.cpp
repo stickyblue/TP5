@@ -7,7 +7,7 @@
 
 
 BigIndustrialLogisticUser::BigIndustrialLogisticUser(std::string n, CityPtr c, WorldMap& m) : User(n, c, m), map(m)
-{}
+{acceptable_mode = {"road"};}
 
 
 
@@ -26,6 +26,6 @@ float BigIndustrialLogisticUser::evaluateCost(std::string mode, float dist)
         return dist / 27;
     }
     else {
-        return dist * (-1);
+        return dist * (9999999);
     }
 }

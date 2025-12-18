@@ -25,6 +25,6 @@ float GeneralUser::evaluateCost(std::string mode, float dist)
         return dist * 2.57;
     }
     else {
-        return dist * (-1);
+        return dist * (9999999);
     }
 }
